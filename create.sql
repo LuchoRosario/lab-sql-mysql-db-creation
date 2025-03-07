@@ -36,6 +36,5 @@ CREATE TABLE IF NOT EXISTS invoices(
 
 FOREIGN KEY(cars_vin) REFERENCES cars(vin),
 FOREIGN KEY(customers_id) REFERENCES customers(customer_id),
-FOREIGN KEY(staff_id) REFERENCES salespersons(staff_id)
-);
+FOREIGN KEY(staff_id) REFERENCES salespersons(staff_id));
 

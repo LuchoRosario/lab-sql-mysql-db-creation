@@ -17,7 +17,7 @@ USE lab_mysql;
 	   ('101', 'Gail Forcewind', 'Paris'),
        ('102', 'Paige Turner', 'Miami'),
        ('103', 'Bob Frapples', 'Mexico City'),
-       ('104', 'Walter Melon', 'Amsterdam');
+       ('104', 'Walter Melons', 'Amsterdam');
 		   
     INSERT IGNORE INTO invoices (invoice_number,datec,vin, customer_id, staff_id) 
     VALUES
