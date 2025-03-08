@@ -30,11 +30,11 @@ CREATE TABLE IF NOT EXISTS salespersons (
 CREATE TABLE IF NOT EXISTS invoices(
 	invoice_number INT UNSIGNED UNIQUE NOT NULL AUTO_INCREMENT PRIMARY KEY,
     datec DATE NOT NULL,
-    car_vin INT UNSIGNED NOT NULL,
-    customer_id INT NOT NULL,
+    vin VARCHAR(17) NOT NULL,
+    customer_id INT AUTO_INCREMENT NOT NULL,
     staff_id INT NOT NULL,
 
-FOREIGN KEY(cars_vin) REFERENCES cars(vin),
-FOREIGN KEY(customers_id) REFERENCES customers(customer_id),
+FOREIGN KEY(vin) REFERENCES cars(vin),
+FOREIGN KEY(customer_id) REFERENCES customers(customer_id),
 FOREIGN KEY(staff_id) REFERENCES salespersons(staff_id));
 
